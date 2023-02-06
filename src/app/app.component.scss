@@ -6,11 +6,16 @@ section {
     height: 100vh;
     padding: 30px;
     box-sizing: border-box;
+
+    h1 {
+        margin-bottom: 30px;
+    }
 }
 
 .first-section {
     height: calc(100vh - 70px);
     padding: 0;
+    background: #eee;
 }
 
 .section-container {
@@ -26,7 +31,7 @@ section {
     background-size: 400% 400%;
     animation: gradient 12s ease infinite, slidein .7s ease-in;
     flex: 1;
-    padding: 10px 20px;
+    padding: 20px 20px;
 }
 
 .section-container-item:nth-child(2) {
@@ -67,17 +72,15 @@ section {
 img {
     max-width: 100%;
     border-radius: 100%;
+    box-shadow: rgba(100, 100, 111, 0.1) 0px 0px 40px 0px;
 }
 
 .projects {
-    background-color: rgb(43, 43, 43);
-    color: white;
-
-    h1 {
-        padding: 0 6px;
-        background: linear-gradient(-45deg,rgb(89, 155, 243), rgb(19, 215, 78));
-        background-size: 400% 400%;
-        animation: gradient 12s ease infinite, slidein .7s ease-in;        width: fit-content;
-        color: black;
-    }
+    // h1 {
+    //     padding: 0 6px;
+    //     background: linear-gradient(-45deg,rgb(89, 155, 243), rgb(19, 215, 78));
+    //     background-size: 400% 400%;
+    //     animation: gradient 12s ease infinite, slidein .7s ease-in;        width: fit-content;
+    //     color: black;
+    // }
 }
