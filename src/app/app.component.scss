@@ -1,4 +1,83 @@
 .container {
-    max-width: 1170px;
     margin: 0 auto;
+}
+
+section {
+    height: 100vh;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.first-section {
+    height: calc(100vh - 70px);
+    padding: 0;
+}
+
+.section-container {
+    height: calc(100vh - 110px);
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.section-container-item {
+    background-color: rgb(19, 215, 78);
+    background: linear-gradient(-45deg,rgb(89, 155, 243), rgb(19, 215, 78));
+    background-size: 400% 400%;
+    animation: gradient 12s ease infinite, slidein .7s ease-in;
+    flex: 1;
+    padding: 10px 20px;
+}
+
+.section-container-item:nth-child(2) {
+    background: 0;
+}
+
+@keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+.large {
+    h1 {
+        font-weight: 700;
+        font-size: 4rem;
+        padding: 0px;
+        margin: 0px;
+    }
+    
+    h2 {
+        font-size: 3rem;
+        font-weight: 600;
+    }
+    
+    h3 {
+        font-size: 2rem;
+        font-weight: 500;
+    }
+}
+
+img {
+    max-width: 100%;
+    border-radius: 100%;
+}
+
+.projects {
+    background-color: rgb(43, 43, 43);
+    color: white;
+
+    h1 {
+        padding: 0 6px;
+        background: linear-gradient(-45deg,rgb(89, 155, 243), rgb(19, 215, 78));
+        background-size: 400% 400%;
+        animation: gradient 12s ease infinite, slidein .7s ease-in;        width: fit-content;
+        color: black;
+    }
 }
