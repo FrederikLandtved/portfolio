@@ -4,9 +4,27 @@
             <h2></h2>
         </div>
         <div class="right">
-            <a href="#projects">Projects</a>
-            <a href="#about-me">About me</a>
-            <a href="#contact">Contact</a>
+            <div class="mobile-menu" (click)="toggleMenu()">
+                <img class="tabbar-link-icon" src="../../assets/icons/hamburger.svg"/>
+            </div>
+            <div class="desktop-menu">
+                <a href="#projects">Projects</a>
+                <a href="#about-me">About me</a>
+                <a href="#contact">Contact</a>
+            </div>
         </div>
+    </div>
+</div>
+
+<div #mySidenav class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">&times;</a>
+    <div *ngIf="sideBarIsShown" class="sidebar-link-item">
+        <a class="nav-link" href="#projects" (click)="closeNav()">Projects</a>
+    </div>
+    <div *ngIf="sideBarIsShown" class="sidebar-link-item">
+        <a class="nav-link" href="#about-me" (click)="closeNav()">About me</a>
+    </div>
+    <div *ngIf="sideBarIsShown" class="sidebar-link-item">
+        <a class="nav-link" href="#contact" (click)="closeNav()">Contact</a>
     </div>
 </div>

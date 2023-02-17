@@ -23,3 +23,88 @@ a {
 a:hover {
     color: rgb(33, 137, 198);
 }
+
+@media screen and (max-width: 1129px) {
+    .desktop-menu {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1129px) {
+    .desktop-menu {
+        display: block;
+    }
+
+    .mobile-menu {
+        display: none;
+    }
+}
+
+.tabbar-link-icon {
+    width: 26px;
+    margin-top: 6px;
+    cursor: pointer;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #ffffff;
+    overflow-x: hidden;
+    transition: 0.2s;
+    padding-top: 60px;
+    box-shadow: rgb(0 0 0 / 30%) 0px 7px 29px 0px;
+    box-sizing: border-box;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: rgb(16, 16, 16);
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #545454;
+  }
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    color: black;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+  .sidebar-link-item {
+    cursor: pointer;
+    font-size: 18px;
+    height: 30px;
+    color: black;
+    font-weight: 500;
+    margin-bottom: 20px;
+    align-items: center;
+    display: flex;
+    margin-left: 20px;
+
+    .smaller {
+        width: 17px;
+        margin-left: 3px;
+        margin-right: 7px;
+    }
+}
