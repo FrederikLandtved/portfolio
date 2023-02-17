@@ -9,6 +9,7 @@ html {
 
 body {
     font-family: 'Titillium Web', sans-serif;
+    background: linear-gradient(90deg, rgba(41,54,76,1) 0%, rgba(41,54,76,1) 33%, rgb(49, 83, 138) 100%);
 }
 
 p {
@@ -18,4 +19,8 @@ p {
 .inner-container {
     max-width: 1200px;
     margin: 0 auto;
+}
+
+.fr-button {
+    background: blue;
 }
