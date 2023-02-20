@@ -1,11 +1,11 @@
 .container {
     margin: 0 auto;
+    height: 100%;
 }
 
 section {
-    height: 100vh;
+    height: 100%;
     padding: 50px;
-    box-sizing: border-box;
 
     h2 {
         margin-left: 15px;
@@ -149,6 +149,10 @@ section {
 @media screen and (max-width: 750px) {
     section {
         padding: 10px;
+
+        h2 {
+            margin-top: 30px;
+        }
     }
 }
 
