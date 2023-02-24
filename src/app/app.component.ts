@@ -29,4 +29,23 @@ export class AppComponent implements OnInit {
       element.classList.add('show');
     }, 1000);
   }
+
+  goToPage(typeOfLink: string) {
+    let linkString: string = "";
+
+    switch (typeOfLink) {
+      case "github":
+          linkString = "https://github.com/FrederikLandtved";
+        break;
+      case "linkedin":
+        linkString = "https://www.linkedin.com/in/frederik-landtved-jensen-982a1a157/";
+      break;
+      default:
+        break;
+    }
+
+    if(linkString !== ""){
+      window.open(linkString, "_blank");
+    }
+  }
 }
