@@ -113,6 +113,15 @@ section {
     box-shadow: rgba(100, 100, 111, 0.1) 0px 0px 40px 0px;
 }
 
+.changing-text {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .changing-text.show {
+    opacity: 1;
+  }
+
 @media screen and (max-width: 1130px) {
     .section-container {
         display: flex;
