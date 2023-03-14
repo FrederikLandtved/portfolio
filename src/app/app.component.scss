@@ -45,6 +45,35 @@ section {
     }
 }
 
+.cv-container {
+    margin-top: -80px;
+    text-align: center;
+    color: white;
+
+    .cv-button {
+        background-color: rgb(41, 54, 76);
+        color: white;
+        padding: 10px;
+        border-radius: 10px;
+        cursor: pointer;
+        margin: 10px 0;
+        transition: background-color 0.2s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:hover {
+            background-color: rgb(50, 67, 95);
+        }
+
+        .icon {
+            width: 20px;
+            height: 20px;
+            margin-left: 10px;
+        }
+    }
+}
+
 .section-container {
     height: calc(100vh - 110px);
     display: flex;

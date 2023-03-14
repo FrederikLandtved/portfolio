@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { saveAs } from 'file-saver';
 
 @Component({
   selector: 'app-root',
@@ -47,5 +48,11 @@ export class AppComponent implements OnInit {
     if(linkString !== ""){
       window.open(linkString, "_blank");
     }
+  }
+
+  downloadCV() {
+    const fileUrl = '../assets/CV.pdf';
+    const fileName = 'FrederikLandtvedCV.pdf';
+    saveAs(fileUrl, fileName);
   }
 }
