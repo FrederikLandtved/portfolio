@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./projects.component.scss']
 })
 export class ProjectsComponent {
+  currentShown: number = 1;
 
+  changeCurrentTab(newTab: number) {
+    this.currentShown = newTab;
+  }
 }

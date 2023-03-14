@@ -1,31 +1,65 @@
+<app-tabbar (onChangeTab)="changeCurrentTab($event)"></app-tabbar>
 <div class="projects-container flex-row">
-    <div class="flex-item">
-        <div class="project-item">
-            <div class="image"></div>
-            <h2>Relesys</h2>
-            <p>Relesys offers a performance app for employees including communication, training and more</p>
-            <div class="tag"></div>
+        <div class="flex-item" *ngIf="currentShown === 1 || currentShown === 2">
+            <div class="project-item">
+                <div class="image"></div>
+                <h2>Relesys</h2>
+                <p>Relesys offers a performance app for employees including communication, training and more</p>
+                
+                <div class="bottom">
+                    <div class="tag angular">AngularJS</div>
+                    <div class="tag">ASP.NET MVC</div>
+                    <div class="tag">C#</div>
+                </div>   
+            </div>
         </div>
-    </div>
-    <div class="flex-item">
-        <div class="project-item">
-            <div class="image intercare"></div>
-            <h2>Intercare</h2>
-            <p>Marketplace for medical treatments</p>
-            <div class="tag"></div>
+        <div class="flex-item" *ngIf="currentShown === 1 || currentShown === 2">
+            <div class="project-item">
+                <div class="image intercare"></div>
+                <h2>Intercare</h2>
+                <p>Marketplace for medical treatments</p>
+                <div class="bottom">
+                    <div class="tag vue">Vue.JS</div>
+                    <div class="tag">MongoDB</div>
+                    <div class="tag">.NET API</div>
+                </div>           
+            </div>
         </div>
-    </div>
-    <div class="flex-item">
+    <div class="flex-item" *ngIf="currentShown === 1 || currentShown === 3">
         <div class="project-item">
             <div class="image ucl"></div>
             <h2>UCL Advisors</h2>
             <p>Web application for registering enquiries from students on University College Lillebælt</p>
-            <div class="tag"></div>
+            <div class="bottom">
+                <div class="tag">ASP.NET MVC</div>
+                <div class="tag">SQL Data Reader</div>
+            </div>        
         </div>
     </div>
-    <div class="flex-item">
+    <div class="flex-item" *ngIf="currentShown === 1 || currentShown === 3">
         <div class="project-item">
-            
+            <div class="image sellino"></div>
+            <h2>Sellino</h2>
+            <p>Mobile app for selling products and creating branded profiles</p>
+            <div class="bottom">
+                <div class="tag react">React Native</div>
+                <div class="tag">.NET 6 API</div>
+                <div class="tag">JWT Auth</div>
+                <div class="tag">EF Core</div>
+            </div>
+        </div>
+    </div>
+    <div class="flex-item" *ngIf="currentShown === 1 || currentShown === 3">
+        <div class="project-item">
+            <div class="image myrunning"></div>
+            <h2>My Running</h2>
+            <p>Angular app for keeping track of runs. Includes authentication and personal routes</p>
+            <div class="bottom">
+                <div class="tag angular">Angular (TS)</div>
+                <div class="tag">.NET 6 API</div>
+                <div class="tag">EF Core</div>
+                <div class="tag">C#</div>
+            </div>
         </div>
     </div>
 </div>
