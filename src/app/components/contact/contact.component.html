@@ -1,0 +1,22 @@
+<div class="contact-component">
+    <form [formGroup]="FormData">
+        <div class="form-group flex-column">
+            <label for="Name">Name *</label>
+            <input type="text" name="Name" formControlName="Name">
+        </div>
+        <div class="form-group flex-column">
+            <label for="EmailAddress">Email *</label>
+            <input type="email" name="EmailAddress" formControlName="EmailAddress">
+        </div>
+        <div class="form-group flex-column">
+            <label for="Phone">Phone</label>
+            <input type="number" name="Phone" formControlName="Phone">
+        </div>
+        <div class="form-group flex-column">
+            <label for="Message">Message *</label>
+            <textarea name="Message" formControlName="Message"></textarea>
+        </div>
+
+        <button type="submit" [disabled]="!FormData.valid">Send</button>
+    </form>
+</div>
