@@ -1,5 +1,5 @@
 on: push
-name: 🚀 Deploy website on push
+name: Portfolio Website Deployment
 jobs:
   web-deploy:
     name: 🎉 Deploy
