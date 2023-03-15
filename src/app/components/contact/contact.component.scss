@@ -1,0 +1,50 @@
+.contact-component {
+    padding: 15px;
+    box-sizing: border-box;
+    max-width: 500px;
+
+    .form-group {
+        margin-bottom: 20px;
+
+        label {
+            margin-bottom: 3px;
+            font-weight: 600;
+        }
+
+        input {
+            padding: 15px;
+            border: 2px solid rgb(211, 211, 211);
+            border-radius: 6px;
+            outline: none;
+            font-family: 'Titillium Web', sans-serif;
+            font-size: 14px;
+        }
+
+        textarea {
+            height: 150px;
+            padding: 10px;
+            box-sizing: border-box;
+            border-radius: 6px;
+            outline: none;
+            border: 2px solid rgb(211, 211, 211);
+            font-family: 'Titillium Web', sans-serif;
+            font-size: 14px;
+        }
+    }
+    // button {
+    //     background-color: rgb(41, 54, 76);
+    //     color: white;
+    //     padding: 10px;
+    //     border-radius: 10px;
+    //     cursor: pointer;
+    //     transition: background-color 0.2s;
+    //     width: 100%;
+    //     border: 0;
+    //     font-family: 'Titillium Web', sans-serif;
+    //     font-size: 16px;
+
+    //     &:hover {
+    //         background-color: rgb(50, 67, 95);
+    //     }
+    // }
+}
