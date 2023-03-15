@@ -45,8 +45,10 @@ section {
     }
 }
 
+
+
 .cv-container {
-    margin-top: -120px;
+    margin-top: -100px;
     text-align: center;
     color: white;
 
@@ -72,6 +74,23 @@ section {
             margin-left: 10px;
         }
     }
+}
+
+.cv-container {
+    -webkit-animation: mover 1s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+}
+.cv-container {
+    -webkit-animation: mover 1s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+}
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-5px); }
+}
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-5px); }
 }
 
 .section-container {
