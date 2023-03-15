@@ -14,3 +14,4 @@ jobs:
         server: ftp.frederiklandtved.dk
         username: frederiklandtved.dk
         password: ${{ secrets.ftp_password }}
+        port: 21
