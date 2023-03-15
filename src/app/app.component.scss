@@ -4,7 +4,7 @@
 }
 
 section {
-    min-height: 100vh;
+    // min-height: 100vh;
     padding: 50px;
 
     h2 {
@@ -46,7 +46,7 @@ section {
 }
 
 .cv-container {
-    margin-top: -80px;
+    margin-top: -120px;
     text-align: center;
     color: white;
 
@@ -91,6 +91,9 @@ section {
 
 .section-container-item:nth-child(2) {
     background: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .link-icons {
@@ -173,7 +176,7 @@ section {
         text-align: center;
 
         img {
-            max-width: 300px;
+            max-width: 250px;
         }
     }
 
@@ -213,5 +216,23 @@ section {
         h1 {
             font-size: 40px;
         }
+
+        h3 {
+            font-size: 1.5rem;
+        }
+    }
+
+    .section-container-item:nth-child(1) {
+        flex: 1.5;
+    }
+
+    .cv-container {
+        margin-top: -160px;
+        text-align: center;
+        color: white;
+    }
+
+    .changing-text {
+        font-size: 1rem;
     }
 }
