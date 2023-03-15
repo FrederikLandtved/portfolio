@@ -14,5 +14,5 @@ jobs:
         server: ftp.frederiklandtved.dk
         username: frederiklandtved.dk
         password: ${{ secrets.FTP_PASSWORD }}
-        local-dir: ./dist/portfolio-frederik/
+        local-dir: /dist/portfolio-frederik/
         port: 21
