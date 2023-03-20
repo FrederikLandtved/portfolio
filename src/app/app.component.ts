@@ -9,7 +9,7 @@ import { saveAs } from 'file-saver';
 export class AppComponent implements OnInit {
   name: string = 'Frederik Landtved';
   changingText: string = '';
-  stringsToShow: string[] = ['Full stack developer', 'Angular developer', 'C# developer'];
+  stringsToShow: string[] = ['Full stack developer', 'Angular developer', 'C# developer', 'Javascript developer'];
   currentStringIndex: number = 0;
 
   constructor() { }
