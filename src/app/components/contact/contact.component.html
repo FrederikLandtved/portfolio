@@ -1,22 +1,22 @@
 <div class="contact-component">
-    <form [formGroup]="FormData">
+    <form action="https://formspree.io/f/xbjealwr" method="POST">
         <div class="form-group flex-column">
-            <label for="Name">Name *</label>
-            <input type="text" name="Name" formControlName="Name">
+            <label>Name</label>
+            <input type="text" name="name" required>
         </div>
         <div class="form-group flex-column">
-            <label for="EmailAddress">Email *</label>
-            <input type="email" name="EmailAddress" formControlName="EmailAddress">
+            <label>Email</label>
+            <input type="email" name="email" required>
         </div>
         <div class="form-group flex-column">
-            <label for="Phone">Phone</label>
-            <input type="number" name="Phone" formControlName="Phone">
+            <label>Phone</label>
+            <input type="number" name="phone" required>
         </div>
         <div class="form-group flex-column">
-            <label for="Message">Message *</label>
-            <textarea name="Message" formControlName="Message"></textarea>
+            <label>Message</label>
+            <textarea name="message" required></textarea>
         </div>
 
-        <button type="submit" [disabled]="!FormData.valid">Send</button>
+        <button type="submit">Send</button>
     </form>
 </div>
