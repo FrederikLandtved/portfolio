@@ -1,8 +1,8 @@
+name: Portfolio Website Deployment
 on:
   push:
     branches: master
 
-name: Portfolio Website Deployment
 jobs:
   web-deploy:
     name: 🎉 Deploy
