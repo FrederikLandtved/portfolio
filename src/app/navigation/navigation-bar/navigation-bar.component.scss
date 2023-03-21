@@ -1,3 +1,5 @@
+@import '../../../variables.scss';
+
 .navigation-bar {
     width: 100%;
     box-sizing: border-box;
@@ -17,11 +19,11 @@ a {
     padding: 4px;
     border-radius: 3px;
     transition: background-color 0.2s;
-    color:rgb(226, 226, 226)
+    color: $text-primary;
 }
 
 a:hover {
-    color: rgb(210, 210, 210);
+    color: $text-primary-accent;
 }
 
 @media screen and (max-width: 1129px) {
@@ -57,7 +59,7 @@ a:hover {
     z-index: 1;
     top: 0;
     right: 0;
-    background-color: #ffffff;
+    background-color: $text-primary;
     overflow-x: hidden;
     transition: 0.2s;
     padding-top: 60px;
@@ -68,21 +70,18 @@ a:hover {
   .sidenav a {
     text-decoration: none;
     font-size: 25px;
-    color: rgb(16, 16, 16);
+    color: $bg-secondary;
     display: block;
     transition: 0.3s;
   }
   
-  .sidenav a:hover {
-    color: #545454;
-  }
   .sidenav .closebtn {
     position: absolute;
     top: 0;
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
-    color: black;
+    color: $bg-primary;
   }
   
   @media screen and (max-height: 450px) {
@@ -94,7 +93,7 @@ a:hover {
     cursor: pointer;
     font-size: 18px;
     height: 30px;
-    color: black;
+    color: $bg-primary;
     font-weight: 500;
     margin-bottom: 20px;
     align-items: center;

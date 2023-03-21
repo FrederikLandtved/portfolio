@@ -1,3 +1,5 @@
+@import '../../../variables.scss';
+
 .tab-bar-component {
     display: flex;
     margin: 0 15px;
@@ -8,14 +10,14 @@
         margin-right: 10px;
         padding: 8px 20px;
         border-radius: 30px;
-        background: #3960a0;
-        color: white;
+        background: $accent-color;
+        color: $text-primary;
         cursor: pointer;
         transition: opacity 0.2s;
         font-size: 14px;
 
         &.active {
-            background: #1f3353;
+            background: $bg-primary;
         }
     }
 

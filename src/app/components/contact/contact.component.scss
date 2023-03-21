@@ -1,3 +1,5 @@
+@import '../../../variables.scss';
+
 .contact-component {
     padding: 15px;
     box-sizing: border-box;
@@ -13,7 +15,7 @@
 
         input {
             padding: 15px;
-            border: 2px solid rgb(211, 211, 211);
+            border: 2px solid $input-border;
             border-radius: 6px;
             outline: none;
             font-family: 'Titillium Web', sans-serif;
@@ -26,25 +28,25 @@
             box-sizing: border-box;
             border-radius: 6px;
             outline: none;
-            border: 2px solid rgb(211, 211, 211);
+            border: 2px solid $input-border;
             font-family: 'Titillium Web', sans-serif;
             font-size: 14px;
         }
     }
     button {
-        background-color: rgb(41, 54, 76);
-        color: white;
+        background-color: $bg-primary;
+        color: $text-primary;
         padding: 10px;
         border-radius: 10px;
         cursor: pointer;
-        transition: background-color 0.2s;
+        transition: opacity 0.2s;
         width: 100%;
         border: 0;
         font-family: 'Titillium Web', sans-serif;
         font-size: 16px;
 
         &:hover {
-            background-color: rgb(50, 67, 95);
+            opacity: 0.9;
         }
     }
 }
